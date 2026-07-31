@@ -1,3 +1,10 @@
 build/
 .toolchain/
 __pycache__/
+
+# Salts for sealed predictions. Committing these would publish pending calls
+# early; losing them forfeits the stake. Back them up privately instead.
+cassandra/vault/
+
+# Local devnet deployment record.
+deployments/1337.json
